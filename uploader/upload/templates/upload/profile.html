@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <form name="form" enctype="multipart/form-data" action="{% url 'upload.views.SaveProfile' %}" method="POST">
+            {% csrf_token %}
+
+            <div style="max-width:470px;">
+                <center>
+                    <input type="text" style="margin-left:20%;" placeholder="Location" name="location"/>
+                </center>
+            </div>
+            <br>
+
+            <div style="max-width:470px;">
+                <center>
+                    <input type="file" style="margin-left:20%;" placeholder="Picture" name="picture"/>
+                </center>
+            </div>
+            <br>
+        </form>
+    </body>
+</html>
+
